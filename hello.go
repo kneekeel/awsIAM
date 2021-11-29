@@ -32,7 +32,7 @@ func GetAccessKeys(c context.Context, api IAMListAccessKeysAPI, input *iam.ListA
 
 func main() {
 	maxItems := flag.Int("m", 10, "The maximum number of access keys to show")
-	userName := flag.String("u", "kneekeel", "The name of the user")
+	userName := flag.String("u", "test", "The name of the user")
 	flag.Parse()
 
 	if *userName == "" {
