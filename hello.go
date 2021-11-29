@@ -44,7 +44,7 @@ func main() {
 		*maxItems = 10
 	}
 
-	cfg, err := config.LoadDefaultConfig(context.TODO())
+	cfg, err := config.LoadDefaultConfig(context.TODO(), config.WithRegion("us-west-2"))
 	if err != nil {
 		panic("configuration error, " + err.Error())
 	}
